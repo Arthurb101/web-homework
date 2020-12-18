@@ -12,6 +12,7 @@ defmodule Homework.Merchants.Merchant do
 
   @doc false
   def changeset(merchant, attrs) do
+    IO.inspect(attrs)
     merchant
     |> cast(attrs, [:name, :description])
     |> validate_required([:name, :description])

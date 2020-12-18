@@ -29,6 +29,7 @@ defmodule HomeworkWeb.Resolvers.TransactionsResolver do
   """
   def create_transaction(_root, args, _info) do
     case Transactions.create_transaction(args) do
+       
       {:ok, transaction} ->
         {:ok, transaction}
 
