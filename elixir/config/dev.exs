@@ -3,9 +3,9 @@ use Mix.Config
 # Configure your database
 config :homework, Homework.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "mypassword",
   database: "homework_dev",
-  hostname: "localhost",
+  hostname: "35.188.173.102",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
 
